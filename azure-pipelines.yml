@@ -24,6 +24,7 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'tkimavanade ACR'
+    repository: 'tkimAng'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
     tags: '$(Build.Repository.Name):latest'
