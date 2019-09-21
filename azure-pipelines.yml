@@ -20,10 +20,9 @@ steps:
     npm install
     ng build --prod
   displayName: 'npm install and build'
+
 - task: Docker@2
   inputs:
     containerRegistry: 'Avanade TKIM'
-    repository: 'tkimAng'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
-    tags: ':latest'
