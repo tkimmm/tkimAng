@@ -16,7 +16,8 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm install -g @angular/cli
+    npm install -g @angular/cli --save-dev
     npm install
     ng build --prod
   displayName: 'npm install and build'
+
