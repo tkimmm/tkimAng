@@ -27,4 +27,5 @@ steps:
     repository: 'tkimAng'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
-    tags: '$(Build.Repository.Name):latest'
+    tags: ':latest'
+
