@@ -24,5 +24,6 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'Avanade TKIM'
+    repository: 'tkimAng'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
